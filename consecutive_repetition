@@ -1,0 +1,9 @@
+import re
+S=input()
+val=-1
+r_pat=r"([a-zA-Z0-9])\1+"  
+rep_val= re.search(r_pat,S)  
+if rep_val:     
+   print (rep_val.group(1))
+else:
+    print(val)
